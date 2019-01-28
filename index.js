@@ -1,6 +1,7 @@
-function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
-  return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.";
+function takeANumber(katzDeliLine){
+  var number = katzDeliLine[katzDeliLine.length] + 1;
+  katzDeliLine.push(number);
+  return `Welcome. You are number  ${katzDeliLine.length}  in line.`;
 }
 
 function nowServing(katzDeliLine){
@@ -25,3 +26,4 @@ function currentLine(katzDeliLine){
     return "The line is currently empty."
   }
 }
+console.log('hi');
